@@ -26,7 +26,7 @@ export const UpdateUser = (props) => {
         navigate('/');
     }
   return (
-    <div className='w-4/12 mx-auto'>
+    <div className='w-11/12 lg:w-4/12 mx-auto'>
             <h1 className='text-center text-white text-xl'>Edit User</h1>
             <form onSubmit={updateHandler}>
                 <div className="grid gap-6 mb-6">
