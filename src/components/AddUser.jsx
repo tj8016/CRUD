@@ -29,7 +29,7 @@ export const AddUser = ({setOpenModal}) => {
     return (
         <div className='fixed inset-0 z-[1000] !mt-0 grid place-items-center overflow-auto bg-white bg-opacity-10 backdrop-blur-sm'>
             
-            <div className='bg-[#111827] relative h-max-content w-4/12 py-10 rounded-md border border-[#0915328b]'>
+            <div className='bg-[#111827] relative h-max-content lg:w-4/12 py-10 rounded-md border border-[#0915328b]'>
                 <button className='absolute text-white top-5 right-7 cursor-pointer h-3 w-3 text-xl'
                     onClick={() => setOpenModal(false)}
                 >
