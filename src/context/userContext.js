@@ -11,6 +11,7 @@ export default function CartContextProvider({children}) {
     const [users, setUsers] = useState([]);
     const [singleuser, setSingleUser] = useState({});
     const getAllUsers = async () => {
+        const toastid = toast.loading("Loading...");
         setLoading(true);
         try {
             const res = await fetch(`${BASE_URL}/user/allusers`, {
@@ -26,6 +27,7 @@ export default function CartContextProvider({children}) {
             console.log(error);
         }
         setLoading(false);
+        toast.dismiss(toastid);
     }
 
     const getSingleUser = async (id) => {
